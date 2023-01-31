@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Applicaton.</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+
+</head>
+<body>
+    <div class="container">
+        <h1>Work Load Transportation Application.</h1>
+        <div class="input-div">
+            <p>
+                <label for="client">Client Name: </label>
+                <br>
+                <input type="text" id="client" onkeyup="">
+            </p>
+            <p>
+                <label for="collection">Collection Address: </label>
+                <br>
+                <input type="text" id="collection" onkeyup="">
+            </p>
+            <p>
+                <label for="delivery">Delivery Address: </label>
+                <br>
+                <input type="text" id="delivery" onkeyup="">
+            </p>
+            <p>
+                <label for="load">Load(Kg/s): </label>
+                <br>
+                <input type="number" id="load" onkeyup="">
+            </p>
+        </div>
+
+        <hr>
+        <div class="req">
+            <h3>Requirements</h3>
+            <p>Number of Units required: <span id="units-required">......</span></p>
+            <p>Trailers Required: <span id="trailers-required">......</span></p>
+            <p>Total Order Amount: <span id="total">......</span></p>
+        </div>
+
+        <div class="btn">
+            <button id="myBtn" onclick="showReceipt()" >Show Receipt</button>
+        </div>
+    </div>
+
+    <div class="receipt" id="my-receipt">
+        <h2>RECEIPT.</h2>
+        <p> Client Name: <span id="name"></span></p>
+        <p> Collection Address: <span id="c-address"></span></p>
+        <p> Delivery Address <span id="d-address"></span></p>
+        <p> Load: <span id="load-receipt"></span></p>
+        <p> Units Required: <span id="req-units"></span></p>
+        <p> Trailers Required: <span id="req-trailers"></span></p>
+        <p> Total Amount: <span id="total-amount"></span></p>
+    </div>
+
+</body>
+</html>
